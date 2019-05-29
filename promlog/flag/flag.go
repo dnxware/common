@@ -1,4 +1,4 @@
-// Copyright 2017 The Prometheus Authors
+// Copyright 2017 The dnxware Authors
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -14,19 +14,19 @@
 package flag
 
 import (
-	"github.com/prometheus/common/promlog"
+	"github.com/dnxware/common/promlog"
 	kingpin "gopkg.in/alecthomas/kingpin.v2"
 )
 
 // LevelFlagName is the canonical flag name to configure the allowed log level
-// within Prometheus projects.
+// within dnxware projects.
 const LevelFlagName = "log.level"
 
 // LevelFlagHelp is the help description for the log.level flag.
 const LevelFlagHelp = "Only log messages with the given severity or above. One of: [debug, info, warn, error]"
 
 // FormatFlagName is the canonical flag name to configure the log format
-// within Prometheus projects.
+// within dnxware projects.
 const FormatFlagName = "log.format"
 
 // FormatFlagHelp is the help description for the log.format flag.

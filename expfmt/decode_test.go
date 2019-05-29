@@ -1,4 +1,4 @@
-// Copyright 2015 The Prometheus Authors
+// Copyright 2015 The dnxware Authors
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -22,9 +22,9 @@ import (
 	"testing"
 
 	"github.com/golang/protobuf/proto"
-	dto "github.com/prometheus/client_model/go"
+	dto "github.com/dnxware/client_model/go"
 
-	"github.com/prometheus/common/model"
+	"github.com/dnxware/common/model"
 )
 
 func TestTextDecoder(t *testing.T) {
@@ -374,7 +374,7 @@ func testDiscriminatorHTTPHeader(t testing.TB) {
 		err    error
 	}{
 		{
-			input:  map[string]string{"Content-Type": `application/vnd.google.protobuf; proto="io.prometheus.client.MetricFamily"; encoding="delimited"`},
+			input:  map[string]string{"Content-Type": `application/vnd.google.protobuf; proto="io.dnxware.client.MetricFamily"; encoding="delimited"`},
 			output: FmtProtoDelim,
 		},
 		{
@@ -382,7 +382,7 @@ func testDiscriminatorHTTPHeader(t testing.TB) {
 			output: FmtUnknown,
 		},
 		{
-			input:  map[string]string{"Content-Type": `application/vnd.google.protobuf; proto="io.prometheus.client.MetricFamily"; encoding="illegal"`},
+			input:  map[string]string{"Content-Type": `application/vnd.google.protobuf; proto="io.dnxware.client.MetricFamily"; encoding="illegal"`},
 			output: FmtUnknown,
 		},
 		{

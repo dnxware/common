@@ -1,4 +1,4 @@
-// Copyright 2015 The Prometheus Authors
+// Copyright 2015 The dnxware Authors
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -59,7 +59,7 @@ func (m *Matcher) Validate() error {
 	return nil
 }
 
-// Silence defines the representation of a silence definition in the Prometheus
+// Silence defines the representation of a silence definition in the dnxware
 // eco-system.
 type Silence struct {
 	ID uint64 `json:"id,omitempty"`

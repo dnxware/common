@@ -1,4 +1,4 @@
-// Copyright 2014 The Prometheus Authors
+// Copyright 2014 The dnxware Authors
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -20,7 +20,7 @@ import "bytes"
 
 // Fuzz text metric parser with with github.com/dvyukov/go-fuzz:
 //
-//     go-fuzz-build github.com/prometheus/common/expfmt
+//     go-fuzz-build github.com/dnxware/common/expfmt
 //     go-fuzz -bin expfmt-fuzz.zip -workdir fuzz
 //
 // Further input samples should go in the folder fuzz/corpus.

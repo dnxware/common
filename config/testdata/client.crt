@@ -3,11 +3,11 @@ Certificate:
         Version: 3 (0x2)
         Serial Number: 3 (0x3)
         Signature Algorithm: sha1WithRSAEncryption
-        Issuer: C=US, O=Prometheus, OU=Prometheus Certificate Authority, CN=Prometheus TLS CA
+        Issuer: C=US, O=dnxware, OU=dnxware Certificate Authority, CN=dnxware TLS CA
         Validity
             Not Before: Apr  5 08:10:12 2019 GMT
             Not After : Mar 26 08:10:12 2059 GMT
-        Subject: C=US, O=Prometheus, CN=Client
+        Subject: C=US, O=dnxware, CN=Client
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
                 RSA Public-Key: (2048 bit)
@@ -52,7 +52,7 @@ Certificate:
                   URI:http://example.com/ca/tls-ca.crl
 
             X509v3 Subject Alternative Name: 
-                email:client@prometheus.example.com
+                email:client@dnxware.example.com
     Signature Algorithm: sha1WithRSAEncryption
          73:fc:87:f2:cf:e3:b1:df:2f:f7:bf:f9:74:dc:0b:f0:7f:95:
          ef:77:ba:6a:7d:c6:c5:f3:d9:d6:c7:eb:f8:a8:30:d3:90:d5:

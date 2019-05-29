@@ -1,4 +1,4 @@
-// Copyright 2014 The Prometheus Authors
+// Copyright 2014 The dnxware Authors
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -22,10 +22,10 @@ import (
 	"strconv"
 	"strings"
 
-	dto "github.com/prometheus/client_model/go"
+	dto "github.com/dnxware/client_model/go"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/prometheus/common/model"
+	"github.com/dnxware/common/model"
 )
 
 // A stateFn is a function that represents a state in a state machine. By
@@ -85,10 +85,10 @@ type TextParser struct {
 // names. Checks for duplicates have to be performed separately, if required.
 // Also note that neither the metrics within each MetricFamily are sorted nor
 // the label pairs within each Metric. Sorting is not required for the most
-// frequent use of this method, which is sample ingestion in the Prometheus
+// frequent use of this method, which is sample ingestion in the dnxware
 // server. However, for presentation purposes, you might want to sort the
 // metrics, and in some cases, you must sort the labels, e.g. for consumption by
-// the metric family injection hook of the Prometheus registry.
+// the metric family injection hook of the dnxware registry.
 //
 // Summaries and histograms are rather special beasts. You would probably not
 // use them in the simple text format anyway. This method can deal with

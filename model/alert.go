@@ -1,4 +1,4 @@
-// Copyright 2013 The Prometheus Authors
+// Copyright 2013 The dnxware Authors
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -25,7 +25,7 @@ const (
 	AlertResolved AlertStatus = "resolved"
 )
 
-// Alert is a generic representation of an alert in the Prometheus eco-system.
+// Alert is a generic representation of an alert in the dnxware eco-system.
 type Alert struct {
 	// Label value pairs for purpose of aggregation, matching, and disposition
 	// dispatching. This must minimally include an "alertname" label.

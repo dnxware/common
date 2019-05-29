@@ -1,4 +1,4 @@
-// Copyright 2017 The Prometheus Authors
+// Copyright 2017 The dnxware Authors
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -12,7 +12,7 @@
 // limitations under the License.
 
 // Package promlog defines standardised ways to initialize Go kit loggers
-// across Prometheus components.
+// across dnxware components.
 // It should typically only ever be imported by main packages.
 package promlog
 

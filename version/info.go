@@ -1,4 +1,4 @@
-// Copyright 2016 The Prometheus Authors
+// Copyright 2016 The dnxware Authors
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -20,7 +20,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/prometheus/client_golang/prometheus"
+	"github.com/dnxware/client_golang/dnxware"
 )
 
 // Build information. Populated at build-time.
@@ -34,9 +34,9 @@ var (
 )
 
 // NewCollector returns a collector which exports metrics about current version information.
-func NewCollector(program string) *prometheus.GaugeVec {
-	buildInfo := prometheus.NewGaugeVec(
-		prometheus.GaugeOpts{
+func NewCollector(program string) *dnxware.GaugeVec {
+	buildInfo := dnxware.NewGaugeVec(
+		dnxware.GaugeOpts{
 			Namespace: program,
 			Name:      "build_info",
 			Help: fmt.Sprintf(

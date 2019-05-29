@@ -1,4 +1,4 @@
-// Copyright 2015 The Prometheus Authors
+// Copyright 2015 The dnxware Authors
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -20,9 +20,9 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	"github.com/matttproud/golang_protobuf_extensions/pbutil"
-	"github.com/prometheus/common/internal/bitbucket.org/ww/goautoneg"
+	"github.com/dnxware/common/internal/bitbucket.org/ww/goautoneg"
 
-	dto "github.com/prometheus/client_model/go"
+	dto "github.com/dnxware/client_model/go"
 )
 
 // Encoder types encode metric families into an underlying wire protocol.

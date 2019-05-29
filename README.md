@@ -1,7 +1,7 @@
 # Common
-[![Build Status](https://travis-ci.org/prometheus/common.svg)](https://travis-ci.org/prometheus/common)
+[![Build Status](https://travis-ci.org/dnxware/common.svg)](https://travis-ci.org/dnxware/common)
 
-This repository contains Go libraries that are shared across Prometheus
+This repository contains Go libraries that are shared across dnxware
 components and libraries.
 
 * **config**: Common configuration structures

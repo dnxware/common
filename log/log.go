@@ -1,4 +1,4 @@
-// Copyright 2015 The Prometheus Authors
+// Copyright 2015 The dnxware Authors
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -66,7 +66,7 @@ func AddFlags(a *kingpin.Application) {
 	a.Action(s.apply)
 }
 
-// Logger is the interface for loggers used in the Prometheus components.
+// Logger is the interface for loggers used in the dnxware components.
 type Logger interface {
 	Debug(...interface{})
 	Debugln(...interface{})
@@ -345,7 +345,7 @@ func Fatalf(format string, args ...interface{}) {
 	baseLogger.sourced().Fatalf(format, args...)
 }
 
-// AddHook adds hook to Prometheus' original logger.
+// AddHook adds hook to dnxware' original logger.
 func AddHook(hook logrus.Hook) {
 	origLogger.Hooks.Add(hook)
 }

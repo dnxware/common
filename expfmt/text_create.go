@@ -1,4 +1,4 @@
-// Copyright 2014 The Prometheus Authors
+// Copyright 2014 The dnxware Authors
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -22,9 +22,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/prometheus/common/model"
+	"github.com/dnxware/common/model"
 
-	dto "github.com/prometheus/client_model/go"
+	dto "github.com/dnxware/client_model/go"
 )
 
 // enhancedWriter has all the enhanced write functions needed here. bytes.Buffer
@@ -63,7 +63,7 @@ var (
 // contains duplicate metrics or invalid metric or label names, the conversion
 // will result in invalid text format output.
 //
-// This method fulfills the type 'prometheus.encoder'.
+// This method fulfills the type 'dnxware.encoder'.
 func MetricFamilyToText(out io.Writer, in *dto.MetricFamily) (written int, err error) {
 	// Fail-fast checks.
 	if len(in.Metric) == 0 {

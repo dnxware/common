@@ -1,4 +1,4 @@
-// Copyright 2015 The Prometheus Authors
+// Copyright 2015 The dnxware Authors
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -22,7 +22,7 @@ import (
 
 	"github.com/matttproud/golang_protobuf_extensions/pbutil"
 
-	dto "github.com/prometheus/client_model/go"
+	dto "github.com/dnxware/client_model/go"
 )
 
 var parser TextParser
@@ -83,7 +83,7 @@ func BenchmarkParseTextGzip(b *testing.B) {
 
 // BenchmarkParseProto benchmarks the parsing of a protobuf-format scrape into
 // metric family DTOs. Note that this does not build a map of metric families
-// (as the text version does), because it is not required for Prometheus
+// (as the text version does), because it is not required for dnxware
 // ingestion either. (However, it is required for the text-format parsing, as
 // the metric family might be sprinkled all over the text, while the
 // protobuf-format guarantees bundling at one place.)
@@ -139,7 +139,7 @@ func BenchmarkParseProtoGzip(b *testing.B) {
 }
 
 // BenchmarkParseProtoMap is like BenchmarkParseProto but DOES put the parsed
-// metric family DTOs into a map. This is not happening during Prometheus
+// metric family DTOs into a map. This is not happening during dnxware
 // ingestion. It is just here to measure the overhead of that map creation and
 // separate it from the overhead of the text format parsing.
 func BenchmarkParseProtoMap(b *testing.B) {

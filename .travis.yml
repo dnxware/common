@@ -1,5 +1,5 @@
 language: go
-# Supported Go versions are synced with github.com/prometheus/client_golang.
+# Supported Go versions are synced with github.com/dnxware/client_golang.
 go:
   - 1.7.x
   - 1.8.x
